@@ -35,13 +35,39 @@ const loadEvent = function() {
     console.log(generateArray([2]));
     */
    const root = document.getElementById("root");
-   const list = generateArray(4);
+   const list = generateArray(200);
 
-   if (list[0] !== "Error") {
+  /* if (list[0] !== "Error") {
        for (const item of list) {
            root.insertAdjacentHTML("beforeend", `<div>${item}</div>`);
        }
+   }*/
+
+   function addZeros(mono) {
+    /*list.forEach(mono => {
+    let result = mono.toString().padStart(3, "0");
+    console.log(result);
+        
+    });*/
+    for (let b = 0; b < list.length; b++) {
+    
+     let divItems = document.createElement("div");
+     divItems.setAttribute("class", "itemDiv");
+     divItems.textContent = list[b].toString().padStart(3, "0");
+     root.appendChild(divItems);
+        
+    }
    }
+   addZeros(list);
+
+
+   function changeStyle() {
+    for (let k = 0; k < list.length; k++) {
+        divs = document.querySelectorAll(".itemDiv")
+        divs[k].classList.add("root");
+    }
+   }
+   changeStyle();
 }
 
 window.addEventListener("load", loadEvent);

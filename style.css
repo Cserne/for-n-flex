@@ -38,6 +38,10 @@
     -webkit-appearance: none !important;
     border-radius: 0;
   }
+ 
+body {
+  background-color: #fff4c2;
+}
   
 #root {
     display: flex;
@@ -46,4 +50,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  
+.itemDiv {
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px solid #cc9966;
+  border-radius: 30%;
+  box-shadow: 5px 5px 10px #9c6137;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: #fffddd;
+  background-color: #c5712d;
+}
+
+.itemDiv:hover {
+  transition: transform 0.5s;
+  transform: scale(1.5);
 }
