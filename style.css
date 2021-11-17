@@ -38,9 +38,12 @@
     -webkit-appearance: none !important;
     border-radius: 0;
   }
-    
-  body {
-    font-family: 'Overpass', sans-serif;
   
-    background-color: #17cfb77c;
-  }
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
