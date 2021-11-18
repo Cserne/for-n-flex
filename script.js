@@ -55,7 +55,6 @@ const loadEvent = function() {
      divItems.setAttribute("class", "itemDiv");
      divItems.textContent = list[b].toString().padStart(3, "0");
      root.appendChild(divItems);
-        
     }
    }
    addZeros(list);
