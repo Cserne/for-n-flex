@@ -62,7 +62,7 @@ const loadEvent = function() {
 
    function changeStyle() {
     for (let k = 0; k < list.length; k++) {
-        divs = document.querySelectorAll(".itemDiv")
+        let divs = document.querySelectorAll(".itemDiv");
         divs[k].classList.add("root");
     }
    }
